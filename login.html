@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="login.js" defer></script>
+    <title>Document</title>
+    <style>
+        body{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(146,146,146,1) 49%, rgba(13,13,13,1) 100%); 
+    background-attachment: fixed; 
+    }
+
+    #loginform{
+    background: white;
+    padding: 35px;
+    margin: 20vh auto 0 auto;
+    width: 400px;
+    border-radius: 10px;
+    }
+
+
+    h1{
+    text-align: center;
+    }
+
+    button{
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 15px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 0px;
+    
+    }
+
+    .logingroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+
+    .logingroup input{
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    }
+    .logingroup input:focus{
+    outline: 0;
+}
+
+    .logingroup .loginerror{
+    color: red;
+    font-size: 15px;
+    margin-top: 5px;
+    }
+
+    .logingroup.success input{
+    border-color: #0cc477;
+    }
+
+    .logingroup.error input{
+    border-color: red;
+    }
+
+
+
+    </style>
+    
+</head>
+<body >
+    <div class="container">
+        <form id="loginform" > 
+            <h1>LOGIN</h1>
+            <div class="logingroup">
+                <label for="loginemail">Email</label>
+                <input type="text" id="loginemail" name="email">
+                <div class="loginerror"></div>
+            </div>
+
+            <div class="logingroup">
+                <label for="loginpassword">Password</label>
+                <input type="password" id="loginpassword" name="password">
+                <div class="loginerror"></div>
+            </div>
+            <button type="submit">GET IN</button>
+        </form>
+    </div>
+</body>
+</html>
